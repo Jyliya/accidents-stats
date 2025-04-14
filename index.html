@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Статистика ДТП</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="stylesMobile.css">
+    <link rel="stylesheet" href="stylesTablet.css">
+</head>
+<body>
+    <header>
+        <nav class="navigation">
+            <button onclick="changeYear(2024)">2024</button>
+            <button onclick="changeYear(2023)">2023</button>
+            <button onclick="changeYear(2022)">2022</button>
+            <button onclick="changeYear(2021)">2021</button>
+            <button onclick="changeYear(2020)">2020</button>
+        </nav>
+    </header>
+    <h1 id="title">Статистика ДТП за 2024 рік</h1>
+
+    <div class="stats">
+        <button id="totes" onclick="updateChart('total')">Загальна кількість <br><span id="total">25 781</span></button>
+        <button id="inj" onclick="updateChart('injured')">Кількість травмованих <br><span id="injured">32 023</span></button>
+        <button id="regs" onclick="updateChart('regions')">Найбільше в регіоні<br><span id="reg">2379</span></button>
+        <button id="reas" onclick="updateChart('reasons')">Найчастіша причина<br><span id="res">Порушення швидкості</span></button>
+    </div>
+
+    <div id="selection">
+        <label id="compareLabel" for="compareYear">Порівняти з даними за:</label>
+        <select id="compareYear" onchange="updateChart(currentChartType)">
+            <option value="2023">2023</option>
+            <option value="2022">2022</option>
+            <option value="2021">2021</option>
+            <option value="2020">2020</option>
+        </select>
+        <label id="compareLabel">рік.</label>
+    </div>
+    
+    <div class="chart-container">
+        <canvas style="display: block; position: flex; box-sizing: border-box; text-align: left; line-height: normal;" id="accidentsChart"></canvas>
+        <a id="dLinkE" href="./2024/Дані за 2024 рік.xlsx" download="Дані за 2024 рік">Зберегти дані Excel</a>
+        <a id="dLinkP" href="./2024/Дані за 2024 рік.pdf" download="Дані за 2024 рік">Зберегти дані Pdf</a>
+        <div id="infoBox"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
