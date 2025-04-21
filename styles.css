@@ -17,9 +17,9 @@ body {
 }
 
 .stats button {
-    padding: 10px;
+    padding: 8px;
     margin: 10px;
-    font-size: 17px;
+    font-size: 16px;
     font-family: "Playfair Display";
     border-radius: 20px;
     cursor: pointer;
