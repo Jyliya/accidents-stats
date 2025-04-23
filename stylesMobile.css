@@ -4,70 +4,39 @@
     }
 
     .navigation button {
-    background-color: white;
-    border: none;
-    margin: 5px;
-    padding: 10px;
-    margin-top: 0px;
-    margin-bottom: 0px;
     margin-left: 5px;
     margin-right: 5px;
     font-size: 18px;
-    cursor: pointer;
-    box-shadow: black;
     }
 
     #title {
         font-size: 25px;
-        font-family: "Playfair Display SC";
-        margin: 10px;
     }
 
     .stats button {
         padding: 5px;
         margin: 5px;
-        font-size: 12px;
-        font-family: "Playfair Display";
-        border-radius: 20px;
-        cursor: pointer;
-        border: none;
-        color: black;
+        font-size: 14px;
         width: 160px;
-        height: 60px;
-        margin-left: 5px;
-        margin-right: 5px;
+        height: 65px;
     }
 
     #compareLabel {
         font-size: 15px;
-        font-family: "Playfair Display";
     }
     
     #compareYear {
-        border-radius: 10px;
-        border: none;
-        background-color: #A7A4A4;
         font-size: 15px;
-        font-family: "Playfair Display";
     }
 
     #infoBox {
         padding: 5px;
-        border: 2px solid #ddd;
-        display: block;
-        border-radius: 20px;
         font-size: 15px;
-        font-family: "Playfair Display";
     }
     
     #dLinkE, #dLinkP {
-        background-color: #A7A4A4;
         font-size: 15px;
-        text-decoration: none;
-        color: black;
-        margin: 10px;
         padding: 4px;
         margin: 2px;
-        border-radius: 10px;
     }
 }
