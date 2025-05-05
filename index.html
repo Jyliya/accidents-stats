@@ -29,7 +29,7 @@
 
     <div id="selection">
         <label id="compareLabel" for="compareYear">Порівняти з даними за:</label>
-        <select id="compareYear" onchange="updateChart(currentChartType)">
+        <select id="compareYear" onchange="updateChart(getCurrentChartType())">
             <option value="2023">2023</option>
             <option value="2022">2022</option>
             <option value="2021">2021</option>
@@ -45,6 +45,6 @@
         <div id="infoBox"></div>
     </div>
 
-    <script src="script.js"></script>
+    <script type="module" src="script.js"></script>
 </body>
 </html>
